@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Pacifico|Work+Sans:200');
+
 *
 {
     box-sizing: border-box;
@@ -11,26 +13,8 @@ body
 
 p
 {
-    font-family: Times, serif;
-    font-size: 1.1em;
-}
-
-h1, h2, h3, h4
-{
-    font-family: Avenir, sans-serif;
-    font-size: 1.1em;
-    font-weight: normal;
-}
-
-
-h1
-{
-    font-size: 1.4em;
-}
-
-h3
-{
-    font-size: 1.2em;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.3em;
 }
 
 
@@ -61,13 +45,27 @@ h3
     flex: 2 auto;
 }
 
+.title-item h1
+{
+    font-family: 'Pacifico', sans-serif;
+    font-size: 2em;
+    margin: 0px;
+    padding: 0px;
+}
+
 .menu-items
 {
     position: absolute;
     display: none;
     width: 200px;
-    right: 0px;
-    top: 65px;
+    right: 5px;
+    top: 62px;
+    background-color: #FFFFFF;
+    box-shadow: 3px 3px #000000;
+            
+            border-radius: 5px 0px 5px 5px;
+       -moz-border-radius: 5px 0px 5px 5px;
+    -webkit-border-radius: 5px 0px 5px 5px;
 }
 
 .menu-item
@@ -75,15 +73,17 @@ h3
     width: 100%;
     display: inline-block;
     padding: 10px;
-    color: #FFFFFF;
+    color: #000000;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
     text-decoration: none;
     cursor: pointer;
 }
 
 .menu-item:hover
 {
-    color: #4CAF50;
-    background-color: #FFFFFF;
+    background-color: #4CAF50;
+    color: #FFFFFF;
 }
 
 .hamburger-btn
@@ -97,12 +97,16 @@ h3
     cursor: pointer;
     flex: none;
     width: 70px;
+            
+            border-radius: 5px 5px 0px 0px;
+       -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
 }
 
 .nav-spacer
 {
     
-    height: 60px;
+    height: 50px;
     width: 100%;
 }
 
@@ -115,6 +119,7 @@ h3
 {
     background-color: #FFFFFF;
     color: #4CAF50;
+    box-shadow: 3px 3px #000000;
 }
 
 /*****************  
@@ -124,16 +129,24 @@ h3
 .header
 {
     width: 100%;
-    min-height: 300px;
+    padding: 10px;
 }
+
 .header-pic 
 {
-    width: 100px; 
-    height: 100px; 
-    margin: 10px auto;
+    width: 150px; 
+    height: 150px; 
+    margin: 20px auto;
+    border: 4px dashed #FFFFFF;
+            
+            border-radius: 75px;
+       -moz-border-radius: 75px;
+    -webkit-border-radius: 75px;
 }
+
 .header-text
 {
+    font-family: 'Pacifico', cursive;
     text-align: center;
 }
 
@@ -143,7 +156,7 @@ h3
 
 .footer-container
 {
-    padding: 5px;
+    padding: 10px;
     width: 100%;
 }
 
@@ -158,6 +171,11 @@ h3
     min-height: 300px;
 }
 
+.col
+{
+    padding: 10px;
+}
+
 .left-col, .left-col-flipped
 {
     flex: 1 auto;
@@ -167,6 +185,16 @@ h3
 {
     flex: 3 auto;
 }
+
+.col h3
+{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    margin-top: 15px;
+}
+
+
 
 
 
@@ -197,21 +225,34 @@ h3
         position: static;
         padding-top: 20px;
         text-align: right;
+        background-color: #4CAF50;
+        box-shadow: none;
+                
+                border-radius: 0px;
+           -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
     }
 
     .menu-item
     {
         display: inline;
         padding: 5px;
-        color: #FFFFFF;
+        background-color: #FFFFFF;
+        color: #000000;
         text-decoration: none;
         cursor: pointer;
+        margin-left: 5px;
+                
+                border-radius: 5px;
+           -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
     }
 
     .menu-item:hover
     {
-        color: #4CAF50;
-        background-color: #FFFFFF;
+        color: #FFFFFF;
+        background-color: #4CAF50;
+        box-shadow: 3px 3px #000000;
     }
 
     .hamburger-btn
@@ -306,11 +347,17 @@ h3
     width: 45px;
     height: 45px;
     background: url(../img/socialmedia_sprites_small.png) no-repeat;
+    margin: 5px;
+            
+            border-radius: 10px;
+       -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    
 }
 
 .fb-icon
 {
-    background-position: -3px 0px;
+    background-position: -3px -1px;
 }
 
 .twitter-icon
